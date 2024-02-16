@@ -1,0 +1,12 @@
+.Login {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.Logins {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}

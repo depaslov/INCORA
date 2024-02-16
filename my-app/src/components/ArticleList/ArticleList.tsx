@@ -1,4 +1,5 @@
 import React from 'react';
+import './ArticlesList.css'
 
 interface ArticleListProps {
   articles: Article[];
@@ -15,7 +16,7 @@ export interface Article {
 const ArticleList: React.FC<ArticleListProps> = ({ articles, onClick }) => {
   return (
     <div>
-      <h2>Articles</h2>
+      <h2 className='ArticleName'>Articles:</h2>
       <ul>
         {articles.map(article => (
           <li key={article.id}>

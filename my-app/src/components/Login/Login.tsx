@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './Login.css'
+import Header from '../Header/Header';
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -11,8 +13,10 @@ const Login: React.FC = () => {
 
   return (
     <div>
+
+    <div className='Login'>
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
+      <form className='Logins' onSubmit={handleLogin}>
         <input
           type="text"
           placeholder="Username"
@@ -27,6 +31,7 @@ const Login: React.FC = () => {
         />
         <button type="submit">Login</button>
       </form>
+    </div>
     </div>
   );
 };

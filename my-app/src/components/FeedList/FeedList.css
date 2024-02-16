@@ -1,0 +1,15 @@
+.Feed{ 
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+    margin-left: 40px;
+}
+.ul{
+    display: grid;
+    gap: 10px;
+    margin-left: 20px;
+}
+.gap{
+    display: flex;
+    gap: 20px
+}

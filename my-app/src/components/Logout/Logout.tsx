@@ -1,4 +1,5 @@
 import React from 'react';
+import './Logout.css'
 
 const Logout: React.FC = () => {
   const handleLogout = () => {
@@ -8,7 +9,7 @@ const Logout: React.FC = () => {
 
   return (
     <div>
-      <button onClick={handleLogout}>Logout</button>
+      <button className='btn' onClick={handleLogout}>Logout</button>
     </div>
   );
 };

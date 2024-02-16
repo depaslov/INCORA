@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './AddFeedForm.css'
 interface AddFeedFormProps {
   onAddArticle: (newArticle: Article) => void; // Змініть назву пропса на onAddArticle
 }
@@ -33,7 +33,7 @@ const AddFeedForm: React.FC<AddFeedFormProps> = ({ onAddArticle }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className = "AddFeedForm " onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Title"

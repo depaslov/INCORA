@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Login from "./components/Login/Login";
-import Logout from "./components/Logout/Logout";
 import FeedList from "./components/FeedList/FeedList";
 import ArticleList from "./components/ArticleList/ArticleList";
 import AddFeedForm from "./components/AddFeedForm/AddFeedForm";
+import FeedReaderApp from "./components/FeedReader/FeedReader";
+import Header from "./components/Header/Header";
+import './App.css'
 
 interface Feed {
   id: number;
@@ -81,9 +82,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Feed Reader App</h1>
-      <Login />
-      <Logout />
+      <Header />
       <FeedList
         feeds={feeds}
         onClick={handleFeedClick}
@@ -93,6 +92,7 @@ const App: React.FC = () => {
         <ArticleList articles={articles} onClick={handleArticleClick} />
       )}
       <AddFeedForm onAddArticle={handleAddArticle} />
+      <FeedReaderApp />
     </div>
   );
 };

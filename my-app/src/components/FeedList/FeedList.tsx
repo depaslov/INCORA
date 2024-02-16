@@ -1,4 +1,5 @@
 import React from 'react';
+import "./FeedList.css"
 
 interface FeedListProps {
   feeds: Feed[];
@@ -14,11 +15,11 @@ export interface Feed {
   
 const FeedList: React.FC<FeedListProps> = ({ feeds, onClick, onDelete }) => {
   return (
-    <div>
-      <h2>Feeds</h2>
-      <ul>
+    <div className='Feed'>
+      <h2>Feeds: </h2>
+      <ul className='ul'>
         {feeds.map(feed => (
-          <li key={feed.id}>
+          <li className = "gap" key={feed.id}>
             <span onClick={() => onClick(feed)}>{feed.title}</span>
             <button onClick={() => onDelete(feed.id)}>Delete</button>
           </li>
